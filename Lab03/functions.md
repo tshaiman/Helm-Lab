@@ -29,3 +29,38 @@ e.g "vicorpacr.azurecr.io"/indexing-service:1.16.0"
 ```bash
 helm lint video
 ```
+
+ <details>
+   <summary>Solution</summary>
+   on the _helpers.tpl function add the following 
+
+  ```yaml
+    {{/*
+    VI Image name
+    */}}
+    {{- define "Video.image" -}}
+    {{- $separator := ":" -}}
+    {{- $termination := 1.16 | toString -}}
+    {{- if .Values.image.digest }}
+        {{- $separator = "@" -}}
+        {{- $termination = .Values.image.digest | toString -}}
+    {{- end -}}
+    {{- printf "%s/%s%s%s" .Values.image.acr .Values.image.repository $separator $termination }}
+    {{- end }}
+
+  ```
+  Then , open deployment.yaml and change 
+  ```yaml
+    securityContext:
+    +++ADD_CODE_HERE+++
+    image: +++ADD_CODE_HERE+++
+  ```
+   to 
+   
+  ```yaml
+    securityContext:
+    {{- toYaml .Values.securityContext | nindent 10 }}
+    image: {{ include "Video.image" . }}
+  ``` 
+
+</details>

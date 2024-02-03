@@ -29,7 +29,6 @@ spec:
         - name: {{ .Chart.Name }}
           securityContext:
           +++ADD_CODE_HERE+++
-          
           image: +++ADD_CODE_HERE+++
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
