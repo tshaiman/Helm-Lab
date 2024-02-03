@@ -1,10 +1,13 @@
-# Lab 01-Creating a Helm Chart
+# 🚀 Lab 01-Creating a Helm Chart
 
 estimated time: 15m
 
+## 🎯 Objective
 In this tutorial, we will learn how to create a Helm chart for deploying applications to Kubernetes.
 
-## Step 1: Initialize a Helm Chart
+## 📚 Instructions
+
+### 1️⃣ Step 1: Initialize a Helm Chart
 
 Cd to the Lab01 Folder on this Repo
 
@@ -18,7 +21,7 @@ To create a new Helm chart, run the following command:
 helm create demo
 ```
 
-## Step 2: Modify Several Aspects of the Helm Manifest
+### 2️⃣ Step 2: Modify Several Aspects of the Helm Manifest
 
 1. Open Chart.yaml file and perform the following modifications :
 
@@ -72,7 +75,7 @@ helm create demo
    change the values file accordingly
    </details>
 
-## Step 3: Install The Chart in Dry-Run Mode
+### 3️⃣ Step 3: Install The Chart in Dry-Run Mode
 
 still on your helm-ws\lab01 folder :
 
@@ -86,7 +89,7 @@ Since Install command can only run once , we need a command to do "install or up
 helm upgrade demo ./demo --dry-run --install
 ```
 
-## Step 4: Install the Chat non-Dry Run
+### 4️⃣ Step 4: Install the Chat non-Dry Run
 
 1. same as above but witout the --dry-run flag
 2. Inspect all got installed
@@ -108,4 +111,3 @@ kubectl get pods
    ```
    helm get manifest demo > demo1.ymal
    ```
-

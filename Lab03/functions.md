@@ -1,10 +1,16 @@
-# Lab 03- Release Management
+
+# 🚀 Lab 03- Release Management
+
+## 🎯 Objective
+Get hands-on experience with Helm's Function capabilities.
 
 estimated time: 10m
 
 In this Tutorial we are going to have a basic look on how function works and what are the benefits of using them.
 
-## Step1 : Inspect the existing Chart
+## 📚 Instructions
+
+## 1️⃣ Step1 : Inspect the existing Chart
 
 1. Cd to Lab03 and open the existing "Video" chart with visual studio code.
 

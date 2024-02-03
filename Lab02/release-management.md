@@ -1,10 +1,14 @@
-# Lab 02- Release Management
+# 🚀 Lab 02- Release Management
+
+## 🎯 Objective
+Get hands-on experience with Helm's rollout commands and learn how to manage your Kubernetes applications effectively.
 
 estimated time: 15m
 
-In this tutorial, we will learn how to View Helm status , history and rolling updates
 
-## Step 0: Cleanup Previous Lab
+## 📚 Instructions
+
+### Step 0: Cleanup Previous Lab
 
 show the current installed chart
 
@@ -20,7 +24,7 @@ remove the chart
 helm delete demo
 ```
 
-## Step 1: Use Bitnami helm chart for rabbit MQ
+### 1️⃣ Step 1: Use Bitnami helm chart for rabbit MQ
 
 1. Cd to the Lab02 Folder on this Repo
 
@@ -44,7 +48,7 @@ kubectl get pods
 ```
 ![rabbit1](../images/rabbit1.png)
 
-## Step 2: Modify the chart by override values file.
+### 2️⃣ Step 2: Modify the chart by override values file.
 
 1. we shall now add more pods to the statefull set to make it more reliable solution.
 
@@ -84,7 +88,7 @@ you should see 2 versions
 
 ![versions](../images/rabbit_versions.png)
 
-## Step 3: Working with multiple Values files
+### 3️⃣ Step 3: Working with multiple Values files
 
 1. lets assume that for dev environment you want to have 5 replicas with a limit of 1 CPU and 2G for each pod for the Dev Environment.
 
@@ -113,7 +117,7 @@ helm history my-rabbit
 ```
 ![history](../images/helm_history.png)
 
-## Step 4: OPEX Issues => REVERT !
+### 4️⃣ Step 4: OPEX Issues => REVERT !
 
 oh no , your previous installation caused many VM's to spin up during the weekend ,causing huge OPEX impact.
 you are being asked to revert the changes as fast as possible . 
@@ -135,7 +139,7 @@ helm history my-rabbit
 ![history2](../images/helm_history2.png)
 
 
-## Step 4: Cleanup and the problem with helm
+### 5️⃣ Step 5: Cleanup and the problem with helm
 
 lets try to cleanup the helm chart by running 
 
@@ -163,3 +167,5 @@ Run the follwoing command to clean the PVC's
  kubectl delete pvc --all --force
  ```
  
+ 🎉 Conclusion
+Congratulations! You've just learned how to use Helm's rollout commands. Keep practicing and exploring other Helm commands to manage your Kubernetes applications effectively. Happy Helm-ing! 🚀
