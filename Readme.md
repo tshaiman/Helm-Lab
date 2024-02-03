@@ -42,5 +42,5 @@ Congratulations on completing the Helm workshop! You should now have a good unde
 ## Resources
 
 - [Helm Documentation](https://helm.sh/docs/)
-- [Helm GitHub Repository](https://github.com/helm/helm)
-
+- [Bitnami Helm Charts](https://github.com/bitnami/charts)
+- [Template Functions](https://helm.sh/docs/chart_template_guide/function_list/)

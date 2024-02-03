@@ -1,5 +1,5 @@
 
-# 🚀 Lab 03- Release Management
+# 🚀 Lab 03- Functions Basics
 
 ## 🎯 Objective
 Get hands-on experience with Helm's Function capabilities.
@@ -25,6 +25,8 @@ e.g "vicorpacr.azurecr.io"/indexing-service:1.16.0"
 **_NOTE:_** the places to change / add code are marked with +++ADD_CODE_HERE+++
 
 4. Run the template in Lint Mode to ensure it is not missing values and/or has the right allignments.
+
+**Challange:_** What if Some day we would like to support Digest Tags and not Image Tags ? 
 
 ```bash
 helm lint video
@@ -64,3 +66,7 @@ helm lint video
   ``` 
 
 </details>
+
+## Resources
+
+- [Template Functions](https://helm.sh/docs/chart_template_guide/function_list/)
