@@ -15,9 +15,9 @@ Before starting this workshop, make sure you have the following prerequisites:
 ## Workshop Content
 
 [Workshop Setup](#Setup)
-[Lab 01 - Creating a Helm Chart](./Lab01/create-helm.md)
-[Lab 02 - Managing Releases with Helm](./Lab02/release-management.md)
-[Lab 03 - Basic Helm Functions](./Lab03/functions.md)
+- [Lab 01 - Creating a Helm Chart](./Lab01/create-helm.md)
+- [Lab 02 - Managing Releases with Helm](./Lab02/release-management.md)
+- [Lab 03 - Basic Helm Functions](./Lab03/functions.md)
 
 ## Setup
 1.	Open Docker Desktop and Enable  Setting -> Kubernetes -> Enable Kubernetes
