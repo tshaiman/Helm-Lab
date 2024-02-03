@@ -1,6 +1,6 @@
 # Lab 02- Release Management
 
-estimated time: 5m
+estimated time: 15m
 
 In this tutorial, we will learn how to View Helm status , history and rolling updates
 
@@ -156,3 +156,10 @@ Helm does not delete PVC's and has some serious challanges with CRD's as well .
 This will prevent us from doing more updates to the chart unless special hoolks and patterns will be applied.
 
 ![PVCS](../images/pvc.png)
+
+Run the follwoing command to clean the PVC's 
+
+```bash
+ kubectl delete pvc --all --force
+ ```
+ 
