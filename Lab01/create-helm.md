@@ -18,7 +18,7 @@ To create a new Helm chart, run the following command:
 helm create demo
 ```
 
-## Modify Several Aspects of the Helm Manifest
+## Step 2: Modify Several Aspects of the Helm Manifest
 
 1. Open Chart.yaml file and perform the following modifications :
 
@@ -72,7 +72,7 @@ helm create demo
    change the values file accordingly
    </details>
 
-## Install The Chart in Dry-Run Mode
+## Step 3: Install The Chart in Dry-Run Mode
 
 still on your helm-ws\lab01 folder :
 
@@ -86,7 +86,7 @@ Since Install command can only run once , we need a command to do "install or up
 helm upgrade demo ./demo --dry-run --install
 ```
 
-## Install the Chat non-Dry Run
+## Step 4: Install the Chat non-Dry Run
 
 1. same as above but witout the --dry-run flag
 2. Inspect all got installed
