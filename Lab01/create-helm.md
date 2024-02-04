@@ -36,7 +36,7 @@ helm create demo
 
    ```
     image:
-      acr: vipublicacr.azure.io
+      acr: vipublicacr.azurecr.io
       repository: nginx
       tag: 1.25
       pullPolicy: IfNotPresent
